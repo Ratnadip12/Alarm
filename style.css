@@ -952,8 +952,8 @@ body {
 }
 .boxMail .boxMail-container .card2:hover h2{
     animation: texth2 2s forwards;
-    animation-delay: 4s;
-    transition: 1s;
+    animation-delay: 0s;
+    transition: 4s;
 }
 @keyframes texth2{
     0%{
@@ -1031,7 +1031,7 @@ body {
     outline: none;
     color: white;
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 2em;
     border-radius: 8px;
     cursor: pointer;    
     position: absolute;
@@ -1044,7 +1044,7 @@ body {
 }   
 
 .card2-content button::after{
-    content: "Turn Over";
+    content: "Click";
 }
 .card2-content button:hover::after {
     content: "Turning";
@@ -1054,7 +1054,7 @@ body {
 }
 
 .text__letter p:nth-child(1){
-    text-align: center;
+    text-align: left;
     position: relative;
     top: 50px;
     line-height: 1.6;
