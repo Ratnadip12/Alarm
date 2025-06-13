@@ -197,33 +197,34 @@
         document.getElementById('bgms').play();
         document.getElementById('bgms').pause();
         alert("WAITING FOR SOME TIME PLZZZ"); 
+        document.getElementById("msge").pause();
         
     
-    // Set the date and time to reveal the birthday content
-  const revealDate = new Date("2025-07-06T00:00:00").getTime();
-  const countdownInterval = setInterval(() => {
-    const now = new Date().getTime();
-    const distance = revealDate - now;
+        // Set the date and time to reveal the birthday content
+        const revealDate = new Date("2025-07-06T00:00:00").getTime();
+        const countdownInterval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = revealDate - now;
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementById("countdown").innerHTML =
-      `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            document.getElementById("countdown").innerHTML =
+            `${days}d ${hours}h ${minutes}m ${seconds}s`;
 
-    if (distance < 0) {
-      clearInterval(countdownInterval);
-      
-      // Hide countdown, show content
-      document.getElementById("countdownContainer").style.display = "none";
-      document.getElementById("wrapper").style.display = "block";
-        document.getElementById('bgms').play();
-    }
-  }, 1000);
-
+            if (distance < 0) {
+            clearInterval(countdownInterval);
+            
+            // Hide countdown, show content
+            document.getElementById("countdownContainer").style.display = "none";
+            document.getElementById("wrapper").style.display = "block";
+                document.getElementById('bgms').play();
+            }
+        }, 1000);
     };
+
     let datetxt = "06 July";
     let datatxtletter = "Ai tor r amr friendship describe korar jonne amke boro boro paragraph lekhte hobek nai. Bass ami ato tai bolbo Happy brithday Sneha stay safe and always be happy, akhon notun jibone pa dili ebre baire jbi prithibi dekhbi stay strong r amke bhulis na, bhalo kore pora suna kor... R ho sun sorry ami mairi bolchi tor pic gulo delete kore diye chi ami nai rakhi just jogar kore chilam tor bday wish korar jonne r nai kichu kori ni sotti bolchi nai rkhi, kichu mone koris na bass. Happy brithday once again r Thank You amr Class X k ato besi memorial banabar jonne :) ";
     let titleLetter = "To you";
