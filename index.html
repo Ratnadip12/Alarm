@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <button id="clickss">CLICK ONCE TO RATE</button>
+    <button id="clickss">REFRESH</button>
     <div id="countdownContainer">
     <div id="countdown" style="font-size: 2rem; color: #FF7882;"></div>
     </div>
@@ -200,7 +200,7 @@
         
     
     // Set the date and time to reveal the birthday content
-  const revealDate = new Date("2025-06-13T01:40:00").getTime();
+  const revealDate = new Date("2025-06-13T13:26:00").getTime();
   const countdownInterval = setInterval(() => {
     const now = new Date().getTime();
     const distance = revealDate - now;
@@ -323,12 +323,12 @@
 
     close.addEventListener('click', function () {
         boxmail.classList.remove('active')
-    })
-
-    document.getElementById("nextPageBtn").onclick = function () {
+    });
+let hasplayed = false;
+document.getElementById("nextPageBtn").onclick = function () {
     document.getElementById("page1").style.display = "none";
     document.getElementById("page2").style.display = "block";
-    let hasplayed = false;
+    
     if (!hasplayed){
         document.getElementById('bgms').pause();
         document.getElementById("msge").play();
@@ -336,7 +336,7 @@
          setTimeout(() => {
             document.getElementById('bgms').play();
         }, 16000);
-    }
+    };
 };
 
 document.getElementById("prevPageBtn").onclick = function () {
