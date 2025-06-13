@@ -323,22 +323,23 @@
 
     close.addEventListener('click', function () {
         boxmail.classList.remove('active')
-    });
-let hasplayed = false;
+    })
+
+    
+let hasplayed = 0;
 document.getElementById("nextPageBtn").onclick = function () {
     document.getElementById("page1").style.display = "none";
     document.getElementById("page2").style.display = "block";
-    
-    if (!hasplayed){
+    if (hasplayed == 0){
         document.getElementById('bgms').pause();
         document.getElementById("msge").play();
-        hasplayed = true;
+        hasplayed = 1;
          setTimeout(() => {
             document.getElementById('bgms').play();
         }, 16000);
+
     };
 };
-
 document.getElementById("prevPageBtn").onclick = function () {
     document.getElementById("page2").style.display = "none";
     document.getElementById("page1").style.display = "block";
