@@ -910,7 +910,7 @@ body {
     transition: all 1s;
     overflow: hidden;
     font-family: "Inter", serif;
-    font-size: 22px;
+    font-size: 21px;
     color: #fff;
 }
 .boxMail .boxMail-container:hover .card2-content{
